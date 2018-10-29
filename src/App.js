@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Title from './components/Title'
+import LightSwitch from './components/LightSwitch'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Codaisseur</h2>
-        </div>
-        <p className="App-intro">
-         This is some code I edited.
-        </p>
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+
+        <main>
+          <Title content="Some simple title" />
+          <LightSwitch />
+        </main>
       </div>
     );
   }
